@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="calculator.css" >
+		<script type="text/javascript" src="calculator.js"></script>
+	</head>
+	<body >
+		<form name="calculadora">
+		<table>
+					<input type="text" id="screen" disabled>
+      	<div class="row">
+					<input type="button" value="AC" onclick="clean();">
+					<input type="button" value="CE" onclick="erase();">
+				</div>
+			<table>
+				<tr>
+					<td><input type="button" value="7"  onclick="btn(value);"></td>
+					<td><input type="button" value="8"  onclick="btn(value);"></td>
+					<td><input type="button" value="9"  onclick="btn(value);"></td>
+					<td><input type="button" value="/"  onclick="btn(value);"></td>
+				</tr>
+					<td><input type="button" value="4"  onclick="btn(value);"></td>
+					<td><input type="button" value="5"  onclick="btn(value);"></td>
+					<td><input type="button" value="6"  onclick="btn(value);"></td>
+					<td><input type="button" value="x"  onclick="btn(value);"></td>
+				<tr>
+					<td><input type="button" value="1"  onclick="btn(value);"></td>
+					<td><input type="button" value="2"  onclick="btn(value);"></td>
+					<td><input type="button" value="3"  onclick="btn(value);"></td>
+					<td><input type="button" value="-"  onclick="btn(value);"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="0" onclick="btn(value);"></td>
+					<td><input type="button" value="." onclick="btn(value);"></td>
+					<td><input type="button" value="=" onclick="resolve(value);"></td>
+					<td><input type="button" value="+" onclick="btn(value);"></td>
+				</tr>
+				</table>
+		</table>
+		</form>
+	</body>
+</html>    
